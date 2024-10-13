@@ -1,7 +1,8 @@
 package com.auca.innovation.crm.core.sales.domain;
 
 import com.auca.innovation.crm.core.customer.domain.Customer;
-import com.auca.innovation.crm.core.product.domain.ProductCategory;
+import com.auca.innovation.crm.core.product.Domain.Product;
+import com.auca.innovation.crm.core.productcategory.domain.ProductCategory;
 import com.auca.innovation.crm.core.utility.AbstactBaseEntity;
 import com.auca.innovation.crm.core.utility.EsalesStatus;
 import jakarta.persistence.*;
@@ -23,6 +24,6 @@ public class Sales extends AbstactBaseEntity {
 
     @OneToMany
     @JoinColumn(name="product_id",nullable = false)
-    private List<ProductCategory> products;
+    private List<Product> products;
 
 }

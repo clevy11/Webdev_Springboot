@@ -1,4 +1,4 @@
-package com.auca.innovation.crm.core.product.domain;
+package com.auca.innovation.crm.core.productcategory.domain;
 
 import com.auca.innovation.crm.core.utility.AbstactBaseEntity;
 import com.auca.innovation.crm.core.utility.EUnit;

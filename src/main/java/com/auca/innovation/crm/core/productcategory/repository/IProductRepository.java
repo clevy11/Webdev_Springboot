@@ -1,6 +1,6 @@
-package com.auca.innovation.crm.core.product.repository;
+package com.auca.innovation.crm.core.productcategory.repository;
 
-import com.auca.innovation.crm.core.product.domain.ProductCategory;
+import com.auca.innovation.crm.core.productcategory.domain.ProductCategory;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
