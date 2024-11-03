@@ -10,3 +10,4 @@ import java.util.UUID;
 public interface ICustomerRepository extends JpaRepository<Customer, UUID> {
 
 }
+

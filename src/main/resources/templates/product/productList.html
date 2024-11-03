@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <div>
+     <h1>Product List</h1>
+     <table>
+         <thead>
+         <tr>
+             <th>S/N</th>
+             <th>Product NAme</th>
+             <th>Product Serial Number</th>
+             <th>Manufactured Date</th>
+             <th>Expiration Date</th>
+             <th>Action</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr th:each="prod,counter:${products}"></tr>
+          <td th:text="${counter.count+1}"></td>
+         <td th:text="${prod.productName}"></td>
+         <td th:text="${prod.productNumber}"></td>
+         <td th:text="${prod.manufactureDate}"></td>
+         <td th:text="${prod.expirationDate}"></td>
+         </tbody>
+     </table>
+ </div>
+</body>
+</html>
