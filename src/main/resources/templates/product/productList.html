@@ -19,12 +19,15 @@
          </tr>
          </thead>
          <tbody>
-         <tr th:each="prod,counter:${products}"></tr>
+         <tr th:each="prod,counter:${products}">
+
           <td th:text="${counter.count+1}"></td>
+
          <td th:text="${prod.productName}"></td>
-         <td th:text="${prod.productNumber}"></td>
+         <td th:text="${prod.serialNumber}"></td>
          <td th:text="${prod.manufactureDate}"></td>
          <td th:text="${prod.expirationDate}"></td>
+         </tr>
          </tbody>
      </table>
  </div>
